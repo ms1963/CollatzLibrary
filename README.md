@@ -63,7 +63,7 @@ Collatz sequenzes from different angles using different views. I am providing th
 for sharing my enthusiasm with others.
 
 I added a demo to the library so that it can also be executed as a standalone program.
-The demo also illustrates how the library might be used.
+In addition, the demo illustrates how the library might be used.
 
 
 
