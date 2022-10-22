@@ -10,7 +10,8 @@ If n is odd, multiply it by 3 and add 1: n_new = 3 x n + 1.
 
 Do the same with the result.
 
-Repeating this algorithm leads to a sequence (Collatz sequence)
+Repeating this algorithm leads to a sequence (the Collatz sequence).
+
 Example:
 
 7 is odd    => 7 * 3 + 1 = 22
