@@ -52,7 +52,7 @@ Example:
 We end up in a loop (4, 2, 1)
 
 Collatz assumed that this behavior is the same for all natural numbers.
-And indeed, all number checked up to pow(2,68) seem to support this assumption.
+And indeed, all numbers up to pow(2,68) seem to support this assumption.
 
 Unfortunately, nobody was able to prove or disprove this assumption so far.
 It might even be the case that we can never prove the assumption. According to
