@@ -1,4 +1,4 @@
-# CollatzLibrary
+# A Collatz Library
 
 In the 30s of the last century, German mathematician Lothar Collatz came up with the following problem:
 Take a natural number n
