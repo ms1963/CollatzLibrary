@@ -58,7 +58,7 @@ Unfortunately, nobody was able to prove or disprove this assumption so far.
 It might even be the case that we can never prove the assumption. According to
 Turing and Gödel there must be some problems trhat fall into this category.
 
-Since I am fascinated by the Collatz consumption, I built my own Python library to study
+Since I am fascinated by the Collatz assumption, I built my own Python library to study
 Collatz sequenzes from different angles using different views. I am providing this library
 for sharing my enthusiasm with others.
 
