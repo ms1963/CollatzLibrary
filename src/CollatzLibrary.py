@@ -1,4 +1,8 @@
 """
+Distributed with:
+GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
 Library for analyzing the Collatz-Problem/(3n+1)-Problem
 including functionality for analyzing alternative Collatz 
 Sequences:
@@ -1123,9 +1127,9 @@ def run_demos():
 if __name__ == "main":
     print("Started from command line using CLI")
     run_demos()
-"""
+
 else:
     print("Imported as a library")
     run_demos()
-"""
+
 
