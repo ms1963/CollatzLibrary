@@ -14,39 +14,43 @@ Repeating this algorithm leads to a sequence (the Collatz sequence).
 
 Example:
 
-7 is odd      => 7 * 3 + 1 = 22
 
-22 is even    => 22 / 2 = 11
 
-11 is odd     => 11 * 3 + 1 = 34
+  7 is odd      => 7 * 3 + 1 = 22
 
-34 is even    => 34 / 2 = 17
+  22 is even    => 22 / 2 = 11
 
-17 is odd     => 17 * 3 + 1 = 52
+  11 is odd     => 11 * 3 + 1 = 34
 
-52 is even    => 52 / 2 = 26
+  34 is even    => 34 / 2 = 17
 
-26 is even    => 26 / 2 = 13
+  17 is odd     => 17 * 3 + 1 = 52
 
-13 is odd     => 13 * 3 + 1 = 40
+  52 is even    => 52 / 2 = 26
 
-40 is even    => 40 / 2 = 20
+  26 is even    => 26 / 2 = 13
 
-20 is even    => 20 / 2 = 10
+  13 is odd     => 13 * 3 + 1 = 40
 
-10 is even    => 10 / 2 = 5
+  40 is even    => 40 / 2 = 20
 
-5 is odd      => 5 * 3 + 1 = 16
+  20 is even    => 20 / 2 = 10
 
-16 is odd     => 16 / 2 = 8
+  10 is even    => 10 / 2 = 5
 
-8 is even     => 8 / 2 = 4
+  5 is odd      => 5 * 3 + 1 = 16
 
-4 is even     => 4 / 2 = 2
+  16 is odd     => 16 / 2 = 8
 
-2 is even     => 2 / 2 = 1
+  8 is even     => 8 / 2 = 4
 
-1 is odd      => 3 * 1 + 1 = 4 
+  4 is even     => 4 / 2 = 2
+
+  2 is even     => 2 / 2 = 1
+
+  1 is odd      => 3 * 1 + 1 = 4 
+  
+  
 
 
 We end up in a loop (4, 2, 1)
