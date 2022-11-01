@@ -15,7 +15,7 @@ Repeating this algorithm leads to a sequence (the Collatz sequence).
 Example:
 
 
-
+´´´
   7 is odd      => 7 * 3 + 1 = 22
 
   22 is even    => 22 / 2 = 11
@@ -49,9 +49,8 @@ Example:
   2 is even     => 2 / 2 = 1
 
   1 is odd      => 3 * 1 + 1 = 4 
-  
-  
 
+´´´
 
 We end up in a loop (4, 2, 1)
 
