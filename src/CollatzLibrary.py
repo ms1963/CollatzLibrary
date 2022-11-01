@@ -1139,7 +1139,7 @@ def run_demos():
         while True:
             (n_new,c) = succ_with_check(n, check)
             n = n_new 
-            print("Check result (n % 8): " + str(c))
+            print("Check result (n % 8): " + str(c) + " for n = "+str(n))
             if (n == 1): break
             
     # run demo functions in demo_list
