@@ -2,14 +2,17 @@
 
 In the 30s of the last century, German mathematician Lothar Collatz came up with the following problem:
 
-```Take a natural number n.
+```
+Take a natural number n.
 
 If n is even, divide it by 2: n_new = n / 2.
 
 If n is odd, multiply it by 3 and add 1: n_new = 3 x n + 1.
-```
 
 Do the same with the result.
+```
+
+
 
 Repeating this algorithm leads to a sequence (the Collatz sequence).
 
