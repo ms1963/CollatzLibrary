@@ -129,6 +129,26 @@ def succ(n, base = 3, delta = 1): # successor of n wrt. Collatz conjecture
             return int(n // 2)
         else:
             return int(base * n + delta)
+            
+# succ_with_predicate does the same as succ, i.e. it calculates the 
+# next element of the collatz sequence following n.
+# In addition, it calls the function check(n) on the argument.
+# For example, check() could calculate n % NUMBER.
+# the result is a tuple consisting of (result, check(result))
+            
+def succ_with_check(n, check, base = 3, delta = 1): # successor of n wrt. Collatz conjecture 
+    if (even(base) != even(delta)):
+        raise ValueError("base and delta must be both evil or odd")
+    check(n)
+    if n <= 1:
+        return (n,check(n))
+    else:
+        if n % 2 == 0:
+            return ((int(n // 2), check(int( n // 2))))
+        else:
+            return ((int(base * n + delta), check(int(base * n + delta))))
+    pass
+
  
 # kth successor of n wrt. Collatz conjecture        
 def kth_succ(n, k, base = 3, delta =  1): 
@@ -623,6 +643,9 @@ def calc_collatz_sequence_opt(n):
     list.insert(len(list), 1)
     return list
     
+
+
+
 """
 GRADIENT calculations for Collatz sequences
     The gradient for the Collatz sequence of n is calculated
@@ -1108,13 +1131,23 @@ def run_demos():
     def demo13():
         print("*** Demo 13: Find Collatz sequence with maximum length in range")
         search_max_in_range(range(1,100000))
+        
+    def demo14():
+        print("*** Demo 14: Calculate succ and run a check() function on the result")
+        n = 157
+        check = lambda x: x % 8
+        while True:
+            (n_new,c) = succ_with_check(n, check)
+            n = n_new 
+            print("Check result (n % 8): " + str(c))
+            if (n == 1): break
             
     # run demo functions in demo_list
     
     
     demo_list = [ demo1, demo2, demo3, demo4, demo5, demo6, demo7,
                   demo8, demo9, demo10a, demo10b, demo11, demo12,
-                  demo13 ]
+                  demo13, demo14 ]
     for fun in demo_list:
         ignore = input(" Press <return> to continue---> ")
         print()
